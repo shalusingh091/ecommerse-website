@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shalu Store - E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Shalu Store 🛍️</h1>
+    <p>Your Online Shopping Hub</p>
+  </header>
+
+  <div class="container">
+    <!-- Products -->
+    <div class="products" id="product-list">
+      <div class="product">
+        <img src="images/laptop.jpg" alt="Laptop">
+        <h3>Laptop Pro</h3>
+        <p>High performance laptop for work and gaming.</p>
+        <p>₹55,000</p>
+        <button onclick="addToCart('Laptop Pro', 55000)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/headphones.jpg" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>Noise-cancelling headphones with long battery life.</p>
+        <p>₹4,500</p>
+        <button onclick="addToCart('Wireless Headphones', 4500)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/smartphone.jpg" alt="Smartphone">
+        <h3>Smartphone X</h3>
+        <p>Latest smartphone with high resolution camera.</p>
+        <p>₹30,000</p>
+        <button onclick="addToCart('Smartphone X', 30000)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/shoes.jpg" alt="Shoes">
+        <h3>Sports Shoes</h3>
+        <p>Comfortable and stylish running shoes.</p>
+        <p>₹2,200</p>
+        <button onclick="addToCart('Sports Shoes', 2200)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/watch.jpg" alt="Watch">
+        <h3>Smart Watch</h3>
+        <p>Track your health and stay connected.</p>
+        <p>₹5,500</p>
+        <button onclick="addToCart('Smart Watch', 5500)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/backpack.jpg" alt="Backpack">
+        <h3>Travel Backpack</h3>
+        <p>Durable and spacious backpack for all trips.</p>
+        <p>₹1,800</p>
+        <button onclick="addToCart('Travel Backpack', 1800)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="cart" id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="total">Total: ₹0</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
